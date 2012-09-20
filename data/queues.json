@@ -1,0 +1,67 @@
+{
+    "success": true,
+    "results": 145,
+    "rows": [
+        {
+            "id": "StringID1",
+            "name": "My Queue name",
+            "NbProducers": 5,
+            "NbSubscribers": 7,
+            "NbHosts": 2,
+            "NbExchanges": 3,
+            "ExchangesList": ["Exchange1","Exchange2","Exchange3"],
+            "HostsList": ["Host1","Host2"],
+        },
+        {
+            "id": "StringID2",
+            "name": "My Queue name",
+            "NbProducers": 5,
+            "NbSubscribers": 7,
+            "NbHosts": 2,
+            "NbExchanges": 3,
+            "ExchangesList": ["Exchange1","Exchange2","Exchange3"],
+            "HostsList": ["Host1","Host2"],
+        },
+        {
+            "id": "StringID3",
+            "name": "My Queue name",
+            "NbProducers": 5,
+            "NbSubscribers": 7,
+            "NbHosts": 2,
+            "NbExchanges": 3,
+            "ExchangesList": ["Exchange1","Exchange2","Exchange3"],
+            "HostsList": ["Host1","Host2"],
+        },
+        {
+            "id": "StringID4",
+            "name": "My Queue name",
+            "NbProducers": 5,
+            "NbSubscribers": 7,
+            "NbHosts": 2,
+            "NbExchanges": 3,
+            "ExchangesList": ["Exchange1","Exchange2","Exchange3"],
+            "HostsList": ["Host1","Host2"],
+        },
+        {
+            "id": "StringID5",
+            "name": "My Queue name",
+            "NbProducers": 5,
+            "NbSubscribers": 7,
+            "NbHosts": 2,
+            "NbExchanges": 3,
+            "ExchangesList": ["Exchange1","Exchange2","Exchange3"],
+            "HostsList": ["Host1","Host2"],
+        }
+        ,
+        {
+            "id": "StringID6",
+            "name": "My Queue name",
+            "NbProducers": 12,
+            "NbSubscribers": 987,
+            "NbHosts": 5,
+            "NbExchanges": 8,
+            "ExchangesList": ["Exchange1","Exchange2","Exchange3"],
+            "HostsList": ["Host1","Host2"],
+        }
+    ]
+}

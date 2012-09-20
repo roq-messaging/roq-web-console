@@ -1,0 +1,36 @@
+{
+    "success": true,
+    "results": 5,
+    "rows": [
+        {
+            "Hostname": "Hostname1",
+            "CpuLoad": 10,
+            "NbQueues": 1,
+            "NbExchanges": 2,
+        },
+        {
+            "Hostname": "Hostname2",
+            "CpuLoad": 20,
+            "NbQueues": 2,
+            "NbExchanges": 4,
+        },
+        {
+            "Hostname": "Hostname3",
+            "CpuLoad": 30,
+            "NbQueues": 3,
+            "NbExchanges": 6,
+        },
+        {
+            "Hostname": "Hostname4",
+            "CpuLoad": 40,
+            "NbQueues": 4,
+            "NbExchanges": 8,
+        },
+        {
+            "Hostname": "Hostname5",
+            "CpuLoad": 50,
+            "NbQueues": 5,
+            "NbExchanges": 107,
+        },
+    ]
+}
