@@ -1,10 +1,10 @@
 Ext.define('Roq.model.Queue', {
     extend: 'Ext.data.Model',
-    fields: ['id', 'name', 'NbProducers', 'NbSubscribers', 'NbHosts', 'NbExchanges', 'ExchangesList', 'HostsList' ],
+    fields: ['Name', 'Host', 'State', 'exchangeList', 'exchanges', 'stats' ],
 
     proxy: {
         type: 'ajax',
-        url: 'data/queues.json',
+        url: 'http://roq.local:3000/queues/list',
         reader: {
             type: 'json',
             root: 'rows',

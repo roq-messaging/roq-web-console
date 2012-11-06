@@ -2,10 +2,16 @@ Ext.define('Roq.controller.Queue', {
     extend: 'Ext.app.Controller',
     
     views: ['QueueList', 'HostLoadChart', 'QueueStatus', 'QueueParam'],
-    stores: ['Queues', 'Hosts'],
+    stores: ['Queues', 'QueueStat'],
     
     init: function() {
       console.log('Initializing "Queue" controller...');
+      
+      this.control({
+        'queuelist': {
+          selectionchange: this.onQueueSelect
+        }
+      });
     },
     
     onLaunch: function() {
@@ -13,7 +19,18 @@ Ext.define('Roq.controller.Queue', {
       var queuesStore = this.getStore('Queues');
       queuesStore.load();
       
-      var hostsStore = this.getStore('Hosts');
-      hostsStore.load();
+      var queueStatStore = this.getStore('QueueStat');
+      queueStatStore.load();
     },
+    
+    onQueueSelect: function(grid, record) {
+      //Retrieve current queue name
+      var curQueueName = record[0].get('Name');
+      console.log('A queue has been clicked! '+ curQueueName);
+      //Update queuestatus panel with relevant information
+      var sp = Ext.widget('queuestatus');
+      sp.html = "<p>You selected the queue </p>"
+        + curQueueName
+        + ".";
+    }
 });

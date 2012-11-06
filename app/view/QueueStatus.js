@@ -3,14 +3,14 @@ Ext.define('Roq.view.QueueStatus', {
     
     alias: 'widget.queuestatus',
     
-    store: 'Queues',
+    store: 'QueueStat',
     
     title: 'Queue status',
     
     initComponent: function() {
         console.log('Initializing the queuestatus widget...');
         
-        this.html = "<p>Detailled status goes here!</p>"
+        this.html = "<p>Click on a queue to show its status here...</p>"
         
         this.callParent(arguments);
     }

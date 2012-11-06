@@ -66,7 +66,7 @@ Ext.define('Roq.view.Viewport', {
               type: 'vbox',
               align: 'stretch'
           },
-          margins: '5 0 5 5',
+          margins: '5 5 5 5',
           items: [
             {
                 xtype: 'queuelist',
@@ -76,7 +76,7 @@ Ext.define('Roq.view.Viewport', {
                 xtype: 'queuestatus',
                 height: 200,
                 margins: '5 0 0 0',
-            },
+            }/* Later maybe...,
             {
                 xtype: 'container',
                 flex: 1,
@@ -110,9 +110,9 @@ Ext.define('Roq.view.Viewport', {
                     ]
                   }
                 ]
-            }
+            }*/
           ]
-        },
+        }/* No log currently...,
         {//East container
           xtype: 'roqlogs',
           region: 'east',
@@ -121,7 +121,7 @@ Ext.define('Roq.view.Viewport', {
           collapsible: true,
           id: 'east-container',
           layout: 'fit'
-        }
+        }*/
       ];
       
       this.callParent();

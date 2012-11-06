@@ -11,12 +11,10 @@ Ext.define('Roq.view.QueueList', {
         console.log('Initializing the queuelist widget...');
         
         this.columns = [
-            {header: 'ID',  dataIndex: 'id',  flex: 1},
-            {header: 'Queue Name', dataIndex: 'name', flex: 1},
-            {header: '# of producers',  dataIndex: 'NbProducers',  flex: 1},
-            {header: '# of subscribers', dataIndex: 'NbSubscribers', flex: 1},
-            {header: '# of hosts',  dataIndex: 'NbHosts',  flex: 1},
-            {header: '# of exchanges', dataIndex: 'NbExchanges', flex: 1}
+            {header: 'Queue Name', dataIndex: 'Name', flex: 1},
+            
+            {header: 'Queue Monitor Hostname',  dataIndex: 'Host',  flex: 1},
+            {header: 'Status', dataIndex: 'State', flex: 1}
         ];
         
         this.bbar = Ext.create('Ext.PagingToolbar', {
